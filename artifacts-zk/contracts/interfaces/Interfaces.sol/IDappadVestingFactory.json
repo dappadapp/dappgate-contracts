@@ -1,0 +1,11 @@
+{
+  "_format": "hh-zksolc-artifact-1",
+  "contractName": "IDappadVestingFactory",
+  "sourceName": "contracts/interfaces/Interfaces.sol",
+  "abi": [],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "factoryDeps": {}
+}

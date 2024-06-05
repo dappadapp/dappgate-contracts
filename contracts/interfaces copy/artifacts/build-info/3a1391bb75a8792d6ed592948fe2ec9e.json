@@ -1,0 +1,424 @@
+{
+	"id": "3a1391bb75a8792d6ed592948fe2ec9e",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/interfaces/zContract.sol": {
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.7;\n\nstruct zContext {\n    bytes origin;\n    address sender;\n    uint256 chainID;\n}\n\ninterface zContract {\n    function onCrossChainCall(\n        zContext calldata context,\n        address zrc20,\n        uint256 amount,\n        bytes calldata message\n    ) external;\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": true,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/interfaces/zContract.sol": {
+				"zContract": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"components": [
+										{
+											"internalType": "bytes",
+											"name": "origin",
+											"type": "bytes"
+										},
+										{
+											"internalType": "address",
+											"name": "sender",
+											"type": "address"
+										},
+										{
+											"internalType": "uint256",
+											"name": "chainID",
+											"type": "uint256"
+										}
+									],
+									"internalType": "struct zContext",
+									"name": "context",
+									"type": "tuple"
+								},
+								{
+									"internalType": "address",
+									"name": "zrc20",
+									"type": "address"
+								},
+								{
+									"internalType": "uint256",
+									"name": "amount",
+									"type": "uint256"
+								},
+								{
+									"internalType": "bytes",
+									"name": "message",
+									"type": "bytes"
+								}
+							],
+							"name": "onCrossChainCall",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"onCrossChainCall((bytes,address,uint256),address,uint256,bytes)": "de43156e"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"bytes\",\"name\":\"origin\",\"type\":\"bytes\"},{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"chainID\",\"type\":\"uint256\"}],\"internalType\":\"struct zContext\",\"name\":\"context\",\"type\":\"tuple\"},{\"internalType\":\"address\",\"name\":\"zrc20\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"message\",\"type\":\"bytes\"}],\"name\":\"onCrossChainCall\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/zContract.sol\":\"zContract\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/interfaces/zContract.sol\":{\"keccak256\":\"0xdbcc57f08fd47b1d92b50cdaf83cf8a6d71e72b4a61cb1c4c1e2c79cae8eccd9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d07644a314f7362486d5f3a69f3ad6dbf182f0eee9c44e62737e60eca3b87b47\",\"dweb:/ipfs/QmQ5bpZEf2akqL7phaH2GCFsCKU23suo6XgYCaSu3ZgjkU\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/interfaces/zContract.sol": {
+				"ast": {
+					"absolutePath": "contracts/interfaces/zContract.sol",
+					"exportedSymbols": {
+						"zContext": [
+							8
+						],
+						"zContract": [
+							21
+						]
+					},
+					"id": 22,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "32:22:0"
+						},
+						{
+							"canonicalName": "zContext",
+							"id": 8,
+							"members": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "origin",
+									"nameLocation": "84:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "78:12:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bytes_storage_ptr",
+										"typeString": "bytes"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "bytes",
+										"nodeType": "ElementaryTypeName",
+										"src": "78:5:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bytes_storage_ptr",
+											"typeString": "bytes"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 5,
+									"mutability": "mutable",
+									"name": "sender",
+									"nameLocation": "104:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "96:14:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "96:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 7,
+									"mutability": "mutable",
+									"name": "chainID",
+									"nameLocation": "124:7:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "116:15:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 6,
+										"name": "uint256",
+										"nodeType": "ElementaryTypeName",
+										"src": "116:7:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "zContext",
+							"nameLocation": "63:8:0",
+							"nodeType": "StructDefinition",
+							"scope": 22,
+							"src": "56:78:0",
+							"visibility": "public"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 21,
+							"linearizedBaseContracts": [
+								21
+							],
+							"name": "zContract",
+							"nameLocation": "146:9:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"functionSelector": "de43156e",
+									"id": 20,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "onCrossChainCall",
+									"nameLocation": "171:16:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 18,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 11,
+												"mutability": "mutable",
+												"name": "context",
+												"nameLocation": "215:7:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "197:25:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_struct$_zContext_$8_calldata_ptr",
+													"typeString": "struct zContext"
+												},
+												"typeName": {
+													"id": 10,
+													"nodeType": "UserDefinedTypeName",
+													"pathNode": {
+														"id": 9,
+														"name": "zContext",
+														"nodeType": "IdentifierPath",
+														"referencedDeclaration": 8,
+														"src": "197:8:0"
+													},
+													"referencedDeclaration": 8,
+													"src": "197:8:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_struct$_zContext_$8_storage_ptr",
+														"typeString": "struct zContext"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 13,
+												"mutability": "mutable",
+												"name": "zrc20",
+												"nameLocation": "240:5:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "232:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 12,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "232:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 15,
+												"mutability": "mutable",
+												"name": "amount",
+												"nameLocation": "263:6:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "255:14:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 14,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "255:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 17,
+												"mutability": "mutable",
+												"name": "message",
+												"nameLocation": "294:7:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "279:22:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes_calldata_ptr",
+													"typeString": "bytes"
+												},
+												"typeName": {
+													"id": 16,
+													"name": "bytes",
+													"nodeType": "ElementaryTypeName",
+													"src": "279:5:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes_storage_ptr",
+														"typeString": "bytes"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "187:120:0"
+									},
+									"returnParameters": {
+										"id": 19,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "316:0:0"
+									},
+									"scope": 21,
+									"src": "162:155:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 22,
+							"src": "136:183:0",
+							"usedErrors": []
+						}
+					],
+					"src": "32:287:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

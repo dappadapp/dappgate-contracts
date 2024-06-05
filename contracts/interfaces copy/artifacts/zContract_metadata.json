@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes",
+								"name": "origin",
+								"type": "bytes"
+							},
+							{
+								"internalType": "address",
+								"name": "sender",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "chainID",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct zContext",
+						"name": "context",
+						"type": "tuple"
+					},
+					{
+						"internalType": "address",
+						"name": "zrc20",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "message",
+						"type": "bytes"
+					}
+				],
+				"name": "onCrossChainCall",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interfaces/zContract.sol": "zContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/zContract.sol": {
+			"keccak256": "0xdbcc57f08fd47b1d92b50cdaf83cf8a6d71e72b4a61cb1c4c1e2c79cae8eccd9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d07644a314f7362486d5f3a69f3ad6dbf182f0eee9c44e62737e60eca3b87b47",
+				"dweb:/ipfs/QmQ5bpZEf2akqL7phaH2GCFsCKU23suo6XgYCaSu3ZgjkU"
+			]
+		}
+	},
+	"version": 1
+}

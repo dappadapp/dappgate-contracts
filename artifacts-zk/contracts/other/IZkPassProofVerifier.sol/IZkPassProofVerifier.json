@@ -1,0 +1,68 @@
+{
+  "_format": "hh-zksolc-artifact-1",
+  "contractName": "IZkPassProofVerifier",
+  "sourceName": "contracts/other/IZkPassProofVerifier.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "taskId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "schemaId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "uHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "publicFieldsHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "validator",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "allocatorSignature",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "validatorSignature",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct IZkPassProofVerifier.ZkPassProof",
+          "name": "_proof",
+          "type": "tuple"
+        }
+      ],
+      "name": "verify",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "factoryDeps": {}
+}

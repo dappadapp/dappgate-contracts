@@ -1,0 +1,377 @@
+{
+  "_format": "hh-zksolc-artifact-1",
+  "contractName": "Errors",
+  "sourceName": "contracts/errors/Errors.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "AlreadyClaimedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadyJoinedSaleError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadyRefundedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ArraysLengthMismatchError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmergencyOverAmountError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmergencyOverRewardError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptySaleNameError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyTierDetailsError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyVestingPercentageError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FCFSSaleAlreadyStartedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FCFSSaleNotEnabledError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FCFSSaleNotStartedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FailedToAddToken",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FirstVestingAlreadyClaimedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientAllowanceError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientBalanceError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientContractBalanceError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAmountError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidInterestRateError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidLockDurationError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMaxInvestmentAmountError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPaymasterInputLengthError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidSaleDurationError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidSaleEndDateError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidSaleIndexError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidSaleStartDateError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidStakeContractAddressError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidStakeIndexError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTierIndexError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidTokenError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidVestingDurationError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidVestingIndexError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaxNodeCountPerUserReachedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaxNodeCountReachedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaxTierInvestmentReachedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaxTotalInvestmentReachedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaximumInvestmentReachedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaximumNodeTierReachedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MinimumInvestmentNotReachedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MinimumNodeTierNotReachedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MinimumStakePointsNotReachedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MinimumUserTierNotReachedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoRewardToHarvestError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoRewardToReInvestError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoTierDetailsFoundError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotEnabledError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotJoinedSaleError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyBootloaderError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RefundNotEnabledError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RefundPeriodOverError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RegisterAlreadyEndedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RegisterNotStartedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SaleAlreadyEndedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SaleIsPausedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SaleNotEndedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SaleNotStartedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "StakeIsPausedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "StakePeriodNotOverError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TierOneCannotJoinStakerRoundError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TokenTransferFailedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TotalVestingPercentageError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TxTransferFailedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnauthorizedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnsupportedPaymasterFlowError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UserAlreadyRegisteredError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UserHasNoNFTError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UserHasNoNFTsError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UserHasNoStakedAmountError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UserNotRegisteredError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UserNotWhitelistedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VestingNotClaimableError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "VestingsNotClaimableError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroAddressError",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "factoryDeps": {}
+}
